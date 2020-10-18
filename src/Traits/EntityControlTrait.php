@@ -1,12 +1,12 @@
 <?php
 
-namespace RonasIT\Support\Traits;
+namespace Asxer\Support\Traits;
 
 use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use RonasIT\Support\Exceptions\InvalidModelException;
-use RonasIT\Support\Exceptions\PostValidationException;
+use Asxer\Support\Exceptions\InvalidModelException;
+use Asxer\Support\Exceptions\PostValidationException;
 
 /**
  * @property Model model

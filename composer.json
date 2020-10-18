@@ -1,12 +1,12 @@
 {
-  "name": "ronasit/laravel-helpers",
+  "name": "asxer/laravel-helpers",
   "description": "Provided helpers function and some helper class.",
   "keywords": ["laravel", "helpers"],
   "license": "MIT",
   "authors": [
     {
       "name": "Roman Dubrovin",
-      "email": "rdubrovin@ronasit.com"
+      "email": "ozkedko@gmail.com"
     }
   ],
   "require": {
@@ -25,8 +25,8 @@
   },
   "autoload": {
     "psr-4": {
-      "RonasIT\\Support\\Tests\\": "tests/",
-      "RonasIT\\Support\\": "src/"
+      "Asxer\\Support\\Tests\\": "tests/",
+      "Asxer\\Support\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -41,7 +41,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "RonasIT\\Support\\HelpersServiceProvider"
+        "Asxer\\Support\\HelpersServiceProvider"
       ]
     }
   }

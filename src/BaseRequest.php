@@ -1,10 +1,10 @@
 <?php
 
-namespace RonasIT\Support;
+namespace Asxer\Support;
 
 use Illuminate\Support\Arr;
 use Illuminate\Foundation\Http\FormRequest;
-use RonasIT\Support\AutoDoc\Traits\AutoDocRequestTrait;
+use Asxer\Support\AutoDoc\Traits\AutoDocRequestTrait;
 
 class BaseRequest extends FormRequest
 {

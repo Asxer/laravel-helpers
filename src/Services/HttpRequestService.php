@@ -1,12 +1,12 @@
 <?php
 
-namespace RonasIT\Support\Services;
+namespace Asxer\Support\Services;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Arr;
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Exception\RequestException;
-use RonasIT\Support\Exceptions\UnknownRequestMethodException;
+use Asxer\Support\Exceptions\UnknownRequestMethodException;
 
 class HttpRequestService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Services;
+namespace Asxer\Support\Services;
 
 use BadMethodCallException;
 

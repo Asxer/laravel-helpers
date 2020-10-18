@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Interfaces;
+namespace Asxer\Support\Interfaces;
 
 interface ExporterInterface
 {

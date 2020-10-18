@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Traits;
+namespace Asxer\Support\Traits;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

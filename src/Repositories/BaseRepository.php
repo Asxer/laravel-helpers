@@ -1,8 +1,8 @@
 <?php
 
-namespace RonasIT\Support\Repositories;
+namespace Asxer\Support\Repositories;
 
-use RonasIT\Support\Traits\EntityControlTrait;
+use Asxer\Support\Traits\EntityControlTrait;
 
 class BaseRepository
 {

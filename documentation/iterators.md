@@ -16,7 +16,7 @@ Return iterable object for foreach.
 
 Example: 
 ````
->>> $csv = new \RonasIT\Support\Iterators\CsvIterator('/tmp/1.csv')
+>>> $csv = new \Asxer\Support\Iterators\CsvIterator('/tmp/1.csv')
 >>> $csv->parseColumns(['id', 'name']);
 
 >>> foreach ($csv->getGenerator() as $line) {

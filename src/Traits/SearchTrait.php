@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Traits;
+namespace Asxer\Support\Traits;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Request;
@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 /**
- * @property Query query 
+ * @property Query query
  */
 trait SearchTrait
 {
@@ -231,7 +231,7 @@ trait SearchTrait
     {
         $filterName = empty($filterName) ? 'from' : $filterName;
         $sign = $strict ? '>' : '>=';
-        
+
         if (!empty($this->filter[$filterName])) {
             $this->addWhere($this->query, $field, $this->filter[$filterName], $sign);
         }
@@ -243,7 +243,7 @@ trait SearchTrait
     {
         $filterName = empty($filterName) ? 'to' : $filterName;
         $sign = $strict ? '<' : '<=';
-        
+
         if (!empty($this->filter[$filterName])) {
             $this->addWhere($this->query, $field, $this->filter[$filterName], $sign);
         }

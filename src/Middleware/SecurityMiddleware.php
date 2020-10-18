@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Middleware;
+namespace Asxer\Support\Middleware;
 
 use Closure;
 use Illuminate\Cache\Repository as Cache;

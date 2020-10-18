@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Traits;
+namespace Asxer\Support\Traits;
 
 use Doctrine\DBAL\Query\QueryBuilder;
 use Illuminate\Database\Eloquent\Relations\Relation;

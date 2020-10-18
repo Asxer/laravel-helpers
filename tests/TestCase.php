@@ -1,12 +1,12 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Asxer\Support\Tests;
 
 use Tymon\JWTAuth\JWTAuth;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
-use RonasIT\Support\Traits\FixturesTrait;
+use Asxer\Support\Traits\FixturesTrait;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Foundation\Testing\TestCase as BaseTest;
 use Carbon\Carbon;

@@ -1,8 +1,8 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Asxer\Support\Tests;
 
-use RonasIT\Support\Traits\FixturesTrait;
+use Asxer\Support\Traits\FixturesTrait;
 
 class HelpersTest extends HelpersTestCase
 {

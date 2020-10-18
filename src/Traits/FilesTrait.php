@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Traits;
+namespace Asxer\Support\Traits;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;

@@ -1,8 +1,8 @@
 <?php
 
-namespace RonasIT\Support\Traits;
+namespace Asxer\Support\Traits;
 
-use RonasIT\Support\Services\HttpRequestService;
+use Asxer\Support\Services\HttpRequestService;
 use GuzzleHttp\ClientInterface;
 use Mockery;
 

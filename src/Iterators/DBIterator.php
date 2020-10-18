@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Iterators;
+namespace Asxer\Support\Iterators;
 
 use Iterator;
 

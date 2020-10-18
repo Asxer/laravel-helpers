@@ -1,9 +1,9 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Asxer\Support\Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTest;
-use RonasIT\Support\Traits\FixturesTrait;
+use Asxer\Support\Traits\FixturesTrait;
 
 class HelpersTestCase extends BaseTest
 {

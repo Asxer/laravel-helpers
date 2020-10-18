@@ -1,9 +1,9 @@
 <?php
 
-namespace RonasIT\Support;
+namespace Asxer\Support;
 
 use Illuminate\Support\ServiceProvider;
-use RonasIT\Support\Middleware\SecurityMiddleware;
+use Asxer\Support\Middleware\SecurityMiddleware;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\JWTAuth;
@@ -29,7 +29,7 @@ class HelpersServiceProvider extends ServiceProvider
             'app' => app()
         ])->boot();
 
-        $this->loadViewsFrom(__DIR__ . '/Stubs', 'ronasit');
+        $this->loadViewsFrom(__DIR__ . '/Stubs', 'Asxer');
     }
 
     public function register()

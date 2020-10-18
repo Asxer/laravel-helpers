@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Exporters;
+namespace Asxer\Support\Exporters;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
@@ -8,7 +8,7 @@ use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\WithHeadings;
-use RonasIT\Support\Interfaces\ExporterInterface;
+use Asxer\Support\Interfaces\ExporterInterface;
 
 abstract class Exporter implements FromQuery, WithHeadings, WithMapping, ExporterInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace RonasIT\Support\Iterators;
+namespace Asxer\Support\Iterators;
 
 use Iterator;
-use RonasIT\Support\Exceptions\IncorrectCSVFileException;
+use Asxer\Support\Exceptions\IncorrectCSVFileException;
 
 class CsvIterator implements Iterator
 {

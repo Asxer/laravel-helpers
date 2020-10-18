@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Exceptions;
+namespace Asxer\Support\Exceptions;
 
 class PostValidationException extends EntityCreateException
 {
