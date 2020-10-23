@@ -144,6 +144,8 @@ trait EntityControlTrait
             $model->fill(Arr::only($entityData, $model->getFillable()));
         }
 
+        $this->beforeCreateHook($model, $data);
+
         $model->save();
         $model->refresh();
 
@@ -198,6 +200,8 @@ trait EntityControlTrait
         } else {
             $item->fill(Arr::only($data, $item->getFillable()));
         }
+
+        $this->beforeUpdateHook($item, $data);
 
         $item->save();
         $item->refresh();
@@ -437,7 +441,17 @@ trait EntityControlTrait
         }
     }
 
+    protected function beforeUpdateHook($entity, $data)
+    {
+        // implement it yourself if you need it
+    }
+
     protected function afterUpdateHook($entity, $data)
+    {
+        // implement it yourself if you need it
+    }
+
+    protected function beforeCreateHook($entity, $data)
     {
         // implement it yourself if you need it
     }
