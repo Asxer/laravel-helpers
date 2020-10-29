@@ -138,13 +138,13 @@ trait EntityControlTrait
         $modelClass = get_class($this->model);
         $model = new $modelClass();
 
+        $this->beforeCreateHook($model, $data);
+
         if ($this->forceMode) {
             $model->forceFill($entityData);
         } else {
             $model->fill(Arr::only($entityData, $model->getFillable()));
         }
-
-        $this->beforeCreateHook($model, $data);
 
         $model->save();
         $model->refresh();
@@ -195,13 +195,13 @@ trait EntityControlTrait
             return [];
         }
 
+        $this->beforeUpdateHook($item, $data);
+
         if ($this->forceMode) {
             $item->forceFill(Arr::only($data, $this->fields));
         } else {
             $item->fill(Arr::only($data, $item->getFillable()));
         }
-
-        $this->beforeUpdateHook($item, $data);
 
         $item->save();
         $item->refresh();
