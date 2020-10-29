@@ -441,7 +441,7 @@ trait EntityControlTrait
         }
     }
 
-    protected function beforeUpdateHook($entity, $data)
+    protected function beforeUpdateHook(&$entity, $data)
     {
         // implement it yourself if you need it
     }
@@ -451,7 +451,7 @@ trait EntityControlTrait
         // implement it yourself if you need it
     }
 
-    protected function beforeCreateHook($entity, $data)
+    protected function beforeCreateHook(&$entity, $data)
     {
         // implement it yourself if you need it
     }
