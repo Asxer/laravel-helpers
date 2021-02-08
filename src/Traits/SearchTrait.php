@@ -48,7 +48,7 @@ trait SearchTrait
         return $this;
     }
 
-    public function filterByQuery(array $fields)
+    public function filterByQuery(array $fields, string $filterName = 'query')
     {
         if (!empty($this->filter['query'])) {
             $this->query->where(function ($query) use ($fields) {
