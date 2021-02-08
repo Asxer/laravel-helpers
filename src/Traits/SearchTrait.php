@@ -50,7 +50,7 @@ trait SearchTrait
 
     public function filterByQuery(array $fields, string $filterName = 'query')
     {
-        if (!empty($this->filter['query'])) {
+        if (!empty($this->filter[$filterName])) {
             $this->query->where(function ($query) use ($fields) {
                 foreach ($fields as $field) {
                     if (Str::contains($field, '.')) {
