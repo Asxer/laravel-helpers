@@ -51,21 +51,21 @@ trait SearchTrait
     public function filterByQuery(array $fields, string $filterName = 'query')
     {
         if (!empty($this->filter[$filterName])) {
-            $this->query->where(function ($query) use ($fields) {
+            $this->query->where(function ($query) use ($fields, $filterName) {
                 foreach ($fields as $field) {
                     if (Str::contains($field, '.')) {
                         $entities = explode('.', $field);
                         $fieldName = array_pop($entities);
                         $relations = implode('.', $entities);
 
-                        $query->orWhereHas($relations, function ($query) use ($fieldName) {
+                        $query->orWhereHas($relations, function ($query) use ($fieldName, $filterName) {
                             $query->where(
-                                $this->getQuerySearchCallback($fieldName)
+                                $this->getQuerySearchCallback($fieldName, $filterName)
                             );
                         });
                     } else {
                         $query->orWhere(
-                            $this->getQuerySearchCallback($field)
+                            $this->getQuerySearchCallback($field, $filterName)
                         );
                     }
                 }
@@ -184,10 +184,10 @@ trait SearchTrait
         return $this;
     }
 
-    protected function getQuerySearchCallback($field)
+    protected function getQuerySearchCallback($field, $filterName)
     {
-        return function ($query) use ($field) {
-            $loweredQuery = mb_strtolower($this->filter['query']);
+        return function ($query) use ($field, $filterName) {
+            $loweredQuery = mb_strtolower($this->filter[$filterName]);
             $field = DB::raw("lower({$field})");
 
             $query->orWhere($field, 'like', "%{$loweredQuery}%");
